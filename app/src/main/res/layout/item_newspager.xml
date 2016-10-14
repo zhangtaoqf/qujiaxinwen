@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:padding="10dp">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_news"
+        android:id="@+id/item_newspager_iconId"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="哈哈"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/item_newspager_iconId"
+        android:id="@+id/item_newspager_titleId"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="哈哈"
+        android:layout_toRightOf="@id/item_newspager_iconId"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/item_newspager_editorId"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="哈哈"
+        android:layout_alignParentRight="true"
+        android:id="@+id/item_newspager_reviewCountId"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/comment_icon"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qf.zt.testdemo2.fragment.NewsFragment">
+    <!-- 标题  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A61010"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="驱家新闻"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_more"
+            />
+    </LinearLayout>
+
+    <!--
+        切换页面的标签
+     -->
+
+    <LinearLayout
+        android:id="@+id/fragment_news_tablinearLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="最新"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="硬件"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="软件"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="手机"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="科技"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/fragment_views_indicatorId"
+            android:layout_width="77dp"
+            android:layout_height="1dp"
+            android:background="#9D1010">
+        </View>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9D1010">
+    </View>
+    <!--
+        ViewPager
+    -->
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fragment_news_viewPagerId">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
